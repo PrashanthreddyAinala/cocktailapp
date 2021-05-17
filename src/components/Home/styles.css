@@ -1,0 +1,61 @@
+/* Home styling */
+.home {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://blog.crystalcruises.com/wp-content/uploads/2020/11/Tipperary-Cocktail-scaled.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+.navbar-toggler {
+  border: 2px solid white;
+}
+.home h1 {
+  font-family: "Reggae One", cursive;
+}
+.navbar {
+  padding: 2rem;
+}
+
+.home li {
+  list-style: none;
+  padding-right: 5rem;
+  font-size: 1.5rem;
+}
+.right {
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+.home h2 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  padding: 8rem 14rem;
+  color: black;
+}
+.cocktail {
+  font-size: 6rem;
+  color: #b45309;
+}
+
+/* small screen */
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .right {
+    display: flex;
+    padding-top: 6rem;
+  }
+  .home li {
+    padding-right: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .home h2 {
+    font-size: 3rem;
+    padding: 5rem 4rem;
+  }
+  .cocktail {
+    font-size: 4.5rem;
+  }
+}

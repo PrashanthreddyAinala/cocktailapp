@@ -1,0 +1,81 @@
+.header {
+  font-family: "Reggae One", cursive;
+  color: #7c2d12;
+  padding: 1rem;
+}
+
+.recipes-nav {
+  display: flex;
+}
+.fav {
+  padding: 1rem;
+  position: absolute;
+  right: 5rem;
+}
+.input {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: #f1f5f9;
+  padding: 0.5rem 1rem;
+  font-size: large;
+  font-weight: 500;
+}
+.items {
+  margin: 2rem 10rem;
+}
+.card {
+  border: none;
+  margin: 0.5rem;
+}
+.card-img-top {
+  border-radius: 7px;
+  height: 28rem;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+
+.flex {
+  display: flex;
+}
+.icon {
+  background-color: red;
+}
+
+@media (max-width: 400px) {
+  .header {
+    font-size: 2rem;
+  }
+  .fav {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    right: 0rem;
+    font-size: 1.3rem;
+  }
+  .input {
+    font-size: medium;
+    padding: 5px 10px;
+    width: 90%;
+  }
+  .items {
+    margin: 1rem 0.3rem;
+  }
+  .card-div {
+    padding: 0px 2px;
+  }
+  .card {
+    height: 13.2rem;
+  }
+  .card-img-top {
+    height: 12rem;
+  }
+  .card-title {
+    font-size: small;
+    padding: 3px 5px;
+  }
+}

@@ -1,0 +1,37 @@
+.details-nav {
+  display: flex;
+}
+.fav {
+  padding: 1rem;
+  position: absolute;
+  right: 5rem;
+}
+.recipes {
+  padding: 1rem;
+  position: absolute;
+  right: 20rem;
+}
+.data {
+  display: flex;
+  padding: 4rem 15rem;
+}
+.info {
+  padding-left: 5rem;
+}
+.info li {
+  list-style: none;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+.info p {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.dark {
+  font-weight: 600;
+}
+.info h1 {
+  font-weight: bold;
+  color: #22c55e;
+}
