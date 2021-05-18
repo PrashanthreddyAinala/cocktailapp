@@ -6,7 +6,8 @@ const ApiUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
 export function Data(props) {
     const [cockTail , setCockTail] = useState([])
     const [search, setSearch] = useState('a');
-    
+    const [favorates, setFavorates] = useState([])
+
     useEffect(()=> {
         fetch(`${ApiUrl}${search}`)
             .then(response=>response.json())
@@ -17,8 +18,17 @@ export function Data(props) {
         setSearch(e.target.value);
     }
 
+    const addfav = (idDrink) => {
+        const fav = cockTail.find(item => item.idDrink === idDrink);
+        setFavorates([...favorates, fav]);
+    }
+    const delfav = (idDrink) => {
+        const delfavs = favorates.filter(item=>item.idDrink !== idDrink);
+        setFavorates(delfavs);
+    }
+
     return(
-        <CocktailContext.Provider value={{cockTail, handleChange}}>
+        <CocktailContext.Provider value={{cockTail, handleChange, addfav, favorates, delfav}}>
             {props.children}
         </CocktailContext.Provider>
     )

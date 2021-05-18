@@ -4,20 +4,22 @@ import { CocktailContext } from "../../context";
 import "./styles.css"
 
 function Details() {
-    const {cockTail} = useContext(CocktailContext);
+    const {cockTail, favorates, addfav, delfav} = useContext(CocktailContext);
     const {productId} = useParams();
     const product = cockTail.find(item=>item.idDrink === productId);
-    console.log(product);
     return(
         <div>
             <div className="details-nav">
                 <Link to="/" style={{textDecoration: "none"}}><h1 className="header">TheCocktail</h1></Link>
-                <Link to="/favorate"><h2 className="fav">MyFavorates</h2></Link>
+                <Link to="/favorate"><h2 className="detail-fav">Favorates</h2></Link>
                 <Link to="/recipes" style={{textDecoration: "none"}}><h2 className="recipes">Recipes</h2></Link>
+            </div>
+            <div>
+                <h1 className="recipe-head">Recipe Details</h1>
             </div>
             <div className="data">
                 <div>
-                <img src={product.strDrinkThumb} alt="cocktail"/>
+                <img src={product.strDrinkThumb} alt="cocktail" className="img"/>
                 </div>
                 <div className="info">
                 <h1>{product.strDrink}</h1>
@@ -32,7 +34,10 @@ function Details() {
                     <li>{product.strIngredient4}</li>
                     <li>{product.strIngredient5}</li>
                 </ul>
-                <ul>{product.strTags}</ul>
+                {favorates.find(item=>item.idDrink === product.idDrink) ? 
+                    <button onClick={()=>delfav(product.idDrink)}>Remove from Favorates</button> : 
+                    <button onClick={()=>addfav(product.idDrink)}>Add to Favorates</button>
+                }
                 </div>
             </div>
         </div>

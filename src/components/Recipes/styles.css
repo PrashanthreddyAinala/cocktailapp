@@ -43,8 +43,28 @@
 .flex {
   display: flex;
 }
-.icon {
+/* .icon {
   background-color: red;
+} */
+
+.heart {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+}
+.heart:hover {
+  cursor: pointer;
+}
+.delheart {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  color: red;
+}
+.delheart {
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {
@@ -77,5 +97,15 @@
   .card-title {
     font-size: small;
     padding: 3px 5px;
+  }
+  .heart {
+    font-size: 1rem;
+    padding: 5px;
+    right: 5px;
+  }
+  .delheart {
+    font-size: 1rem;
+    padding: 5px;
+    right: 5px;
   }
 }
