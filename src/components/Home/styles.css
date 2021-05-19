@@ -1,6 +1,6 @@
 /* Home styling */
 .home {
-  color: white;
+  color: #7c2d12;
   font-family: "Roboto", sans-serif;
   background-image: url("https://blog.crystalcruises.com/wp-content/uploads/2020/11/Tipperary-Cocktail-scaled.jpeg");
   background-size: cover;
@@ -26,6 +26,7 @@
   position: absolute;
   right: 0px;
 }
+
 .home h2 {
   font-family: "Lobster", cursive;
   font-size: 4rem;

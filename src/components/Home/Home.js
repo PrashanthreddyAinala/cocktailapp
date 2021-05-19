@@ -9,13 +9,10 @@ function Home() {
                 <h1>TheCocktail</h1>
                 <div className="right">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/recipes" style={{color: "orange"}}>Recipes</Link>
                     </li>
                     <li>
-                        <Link to="/recipes">Recipes</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about" style={{color: "orange"}}>About</Link>
                     </li>
                 </div>
             </nav>

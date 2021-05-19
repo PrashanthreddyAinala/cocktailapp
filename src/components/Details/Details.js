@@ -11,7 +11,7 @@ function Details() {
         <div>
             <div className="details-nav">
                 <Link to="/" style={{textDecoration: "none"}}><h1 className="header">TheCocktail</h1></Link>
-                <Link to="/favorate"><h2 className="detail-fav">Favorates</h2></Link>
+                <Link to="/favorate"><h2 className="detail-fav"><i className='fas fa-heart delheart'></i></h2></Link>
                 <Link to="/recipes" style={{textDecoration: "none"}}><h2 className="recipes">Recipes</h2></Link>
             </div>
             <div>
@@ -35,8 +35,8 @@ function Details() {
                     <li>{product.strIngredient5}</li>
                 </ul>
                 {favorates.find(item=>item.idDrink === product.idDrink) ? 
-                    <button onClick={()=>delfav(product.idDrink)}>Remove from Favorates</button> : 
-                    <button onClick={()=>addfav(product.idDrink)}>Add to Favorates</button>
+                    <button onClick={()=>delfav(product.idDrink)}>Remove from favourites</button> : 
+                    <button onClick={()=>addfav(product.idDrink)}>Add to favourites</button>
                 }
                 </div>
             </div>

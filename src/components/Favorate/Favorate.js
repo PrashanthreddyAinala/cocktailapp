@@ -12,7 +12,7 @@ function Favorates() {
                 <Link to="/recipes"><h2 className="fav-recipes">Recipes</h2></Link>
             </div>
             <div>
-                <h1 className="fav-title">Favorates List</h1>
+                <h1 className="fav-title">Favourites List</h1>
             </div>
             <div>
                 {favorates.length > 0 ? favorates.map(item=> {
@@ -22,12 +22,11 @@ function Favorates() {
                             <div>
                                 <h1>{item.strDrink}</h1>
                                 <p>{item.strCategory}</p>
-                                <p>{item.strGlass}</p>
                             </div>
                             <i className="far fa-trash-alt delIcon" onClick={()=>delfav(item.idDrink)}></i>
                         </div>
                     )
-                }): <p>No favorates added...!</p>}
+                }): <p>No favourite added...!</p>}
             </div>
             
         </div>

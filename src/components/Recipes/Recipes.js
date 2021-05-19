@@ -11,7 +11,7 @@ function Recipes() {
         <div>
             <div className="recipes-nav">
                 <Link to="/" style={{textDecoration: "none"}}><h1 className="header">TheCocktail</h1></Link>
-                <Link to="/favorate"><h2 className="fav">MyFavorates</h2></Link>
+                <Link to="/favorate"><h2 className="fav"><i className='fas fa-heart delheart'></i></h2></Link>
             </div>
             <input type="text" placeholder="Search for a cocktail..." className="input" onChange={(e)=>handleChange(e)}/>
             <div className="row items">

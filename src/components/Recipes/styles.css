@@ -32,7 +32,7 @@
 }
 .card-img-top {
   border-radius: 7px;
-  height: 28rem;
+  height: 23rem;
 }
 .card-title {
   font-weight: 700;
@@ -43,9 +43,6 @@
 .flex {
   display: flex;
 }
-/* .icon {
-  background-color: red;
-} */
 
 .heart {
   font-size: 1.8rem;
@@ -74,7 +71,7 @@
   .fav {
     margin-top: 1rem;
     padding: 0.5rem;
-    right: 0rem;
+    right: 1rem;
     font-size: 1.3rem;
   }
   .input {
@@ -89,10 +86,10 @@
     padding: 0px 2px;
   }
   .card {
-    height: 13.2rem;
+    height: 11.8rem;
   }
   .card-img-top {
-    height: 12rem;
+    height: 10rem;
   }
   .card-title {
     font-size: small;

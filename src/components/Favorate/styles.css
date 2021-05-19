@@ -16,15 +16,17 @@
 .fav-list {
   display: flex;
   margin: auto;
-  border: 2px solid #d97706;
+  border: 1px solid #e5e7eb;
   max-width: 550px;
   margin-bottom: 1rem;
   border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .fav-list h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #10b981;
+  padding-top: 2rem;
 }
 .fav-img {
   width: 16rem;
@@ -35,7 +37,6 @@
 }
 .fav-list p {
   font-size: 1.2rem;
-  background-color: #eff6ff;
   padding: 4px;
 }
 .delIcon {
@@ -73,15 +74,18 @@
     border-top-left-radius: 16px;
   }
   .fav-list h1 {
+    padding-top: 2rem;
+    padding-left: 1.6rem;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .fav-list p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 2px;
+    padding-left: 1.6rem;
   }
   .delIcon {
-    right: 2rem;
+    right: 1.5rem;
     padding-top: 3.2rem;
     font-size: 1rem;
   }
