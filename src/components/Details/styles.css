@@ -23,7 +23,10 @@
   margin: auto;
 }
 .img {
-  padding: 2rem 0rem 0rem 5rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  height: 40rem;
+  width: 35rem;
   border-radius: 20px;
 }
 .info {
@@ -36,7 +39,7 @@
   font-family: "Roboto", sans-serif;
 }
 .info p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
   font-family: "Roboto", sans-serif;
 }
@@ -57,7 +60,7 @@
   border: none;
   background-color: #60a5fa;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media (max-width: 400px) {

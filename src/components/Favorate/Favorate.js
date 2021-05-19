@@ -26,7 +26,7 @@ function Favorates() {
                             <i className="far fa-trash-alt delIcon" onClick={()=>delfav(item.idDrink)}></i>
                         </div>
                     )
-                }): <p>No favourite added...!</p>}
+                }): <p style={{textAlign:"center", color:"red"}}><i className='fas fa-heart'></i></p>}
             </div>
             
         </div>

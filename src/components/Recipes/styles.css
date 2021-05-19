@@ -29,10 +29,11 @@
 .card {
   border: none;
   margin: 0.5rem;
+  height: 23rem;
 }
 .card-img-top {
   border-radius: 7px;
-  height: 23rem;
+  height: 20rem;
 }
 .card-title {
   font-weight: 700;

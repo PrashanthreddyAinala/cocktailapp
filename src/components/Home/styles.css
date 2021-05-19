@@ -6,9 +6,7 @@
   background-size: cover;
   height: 100vh;
 }
-.navbar-toggler {
-  border: 2px solid white;
-}
+
 .home h1 {
   font-family: "Reggae One", cursive;
 }
@@ -30,7 +28,7 @@
 .home h2 {
   font-family: "Lobster", cursive;
   font-size: 4rem;
-  padding: 8rem 14rem;
+  padding: 8rem 14rem 0rem;
   color: black;
 }
 .cocktail {

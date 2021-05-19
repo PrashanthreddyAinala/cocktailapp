@@ -1,0 +1,17 @@
+.about-home {
+  position: absolute;
+  right: 15rem;
+  padding-top: 2rem;
+}
+.about-recipes {
+  position: absolute;
+  right: 2rem;
+  padding-top: 2rem;
+}
+.about h1 {
+  text-align: center;
+}
+.about p {
+  text-align: center;
+  padding: 2rem;
+}
