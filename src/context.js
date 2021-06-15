@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const CocktailContext = createContext();
-const ApiUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
+const ApiUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=";
 
 export function Data(props) {
     const [cockTail , setCockTail] = useState([])
@@ -26,7 +26,7 @@ export function Data(props) {
         setFavorates([...favorates, fav]);
     }
     const delfav = (idDrink) => {
-        toast("Item deleted from favourites", { autoClose: 1500}, {
+        toast("Item removed from favourites", { autoClose: 1500}, {
             position: toast.POSITION.TOP_CENTER
           });
         const delfavs = favorates.filter(item=>item.idDrink !== idDrink);
