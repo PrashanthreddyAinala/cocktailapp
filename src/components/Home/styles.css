@@ -3,7 +3,7 @@
   color: #7c2d12;
   font-family: "Roboto", sans-serif;
   background-image: url("https://i.pinimg.com/originals/dd/9a/2e/dd9a2e1567e388c36c10682de9b60597.jpg");
-  /* background-size: cover; */
+  background-size: cover;
   height: 100vh;
 }
 
@@ -28,7 +28,7 @@
 .home h2 {
   font-family: "Lobster", cursive;
   font-size: 4rem;
-  margin-left: 65rem;
+  margin-left: 50rem;
   padding: 8rem 14rem 0rem;
   color: white;
 }
